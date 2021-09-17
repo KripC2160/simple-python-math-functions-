@@ -11,7 +11,7 @@ def fibonacci(forloop):
             print(num[1])
         else:
             print(num[0]+num[1])
-            num.append(num[0]+num[1])
-            num.pop(0)
+            num.append(num[0]+num[1]) #creates new current value to update the value
+            num.pop(0) #delets the previous value
 
 fibonacci(forloop) #replace for loops with amount value you want to get
