@@ -8,7 +8,7 @@ def fibonacci(forloop):
     num = [0, 1] #array that holds the current and previous values
     for i in range(forloop):
         if i < 1:
-            print(num[1])
+            print(num[1]) #the print function can be replaced with other functions like return
         else:
             print(num[0]+num[1])
             num.append(num[0]+num[1]) #creates new current value to update the value
