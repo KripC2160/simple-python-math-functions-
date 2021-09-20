@@ -10,4 +10,4 @@ If you want to find values that are not close to the known variables (e.g. n_35 
 def find_recursive(answer, difference):
     return answer + difference #yes, it's this simple 
 
-print(find_recursive(7, 7)) #replace a with the answer with term before the one you want to find, replace c for difference
+print(find_recursive(known_answer, difference)) #replace a with the answer with term before the one you want to find, replace c for difference
