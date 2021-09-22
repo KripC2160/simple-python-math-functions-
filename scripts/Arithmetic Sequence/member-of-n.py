@@ -1,17 +1,21 @@
 
-#STILL WIP
-
-# var = 762 
-# if (var - n1) % 2 == 0:
-#   return True
-# else:
-#   return false
+#this is a code that can check if the number is a member of the sequence
+#formula: num = d(n-1)+ n_1
 
 
-def is_member(num, n1):
-    if (num - n1) % 2 == 0:
-        return (num -n1) / 2
+def is_member(num, diff, n1):
+    if (num - n1) % 2 == 0: #Checks if number is an interger or float 
+        return ((num - diff) / n1) + 1
+        find_n(num, n1, diff)
     else: 
-        return False #Returns false is not part of the member
+        return False
 
-print(is_member(30, 2))
+def find_n(num, n1, diff):
+    while n1 < num:
+        n1 += diff
+
+    if n1 >= num:
+        return n1    
+        print(n1)
+
+print(is_member(56, 2, 2))
